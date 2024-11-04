@@ -1,0 +1,11 @@
+def gcd(m, n):
+    while m != 0:
+        m, n = n % m, m
+    return n
+
+m = 48
+n = 18
+
+result = gcd(m, n)
+
+print(f"The GCD of {m} and {n} is: {result}")
